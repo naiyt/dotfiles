@@ -3,3 +3,5 @@ alias "tpOff"="~/source/git/disable-touchpad/disableTouchpad -d"
 alias "tpOn"="~/source/git/disable-touchpad/disableTouchpad -e"
 
 . "$HOME/.homesick/repos/homeshick/homeshick.fish"
+
+homeshick --quiet refresh

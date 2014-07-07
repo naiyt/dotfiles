@@ -32,5 +32,5 @@ function fish_prompt
     end
   end
 
-  echo -n -s $cwd $git_info ' ' $normal $arrow ' '
+  echo -n -s $blue(whoami)$cyan@$blue(hostname) ' ' $cwd $git_info ' ' $normal $arrow ' '
 end
