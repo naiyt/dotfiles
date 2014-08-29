@@ -2,13 +2,13 @@ set shell=/bin/sh
 set nocompatible
 filetype off
 
-set rtp+=/etc/vim/bundle/vundle
-call vundle#rc('/etc/vim/bundle')
-
-Bundle 'gmarik/vundle'
-Bundle 'saltstack/salt-vim'
-Bundle 'kien/ctrlp.vim'
-Bundle 'terryma/vim-multiple-cursors'
+" set rtp+=/etc/vim/bundle/vundle
+" call vundle#rc('/etc/vim/bundle')
+"
+" Bundle 'gmarik/vundle'
+" Bundle 'saltstack/salt-vim'
+" Bundle 'kien/ctrlp.vim'
+" Bundle 'terryma/vim-multiple-cursors'
 
 filetype plugin indent on
 
