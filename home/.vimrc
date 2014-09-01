@@ -26,3 +26,8 @@ map <F7> :tabp<CR>
 map <F8> :tabn<CR>
 set ic
 let g:ctrlp_map = '<c-p>'
+
+nnoremap <C-J> <C-W><C-J>
+nnoremap <C-K> <C-W><C-K>
+nnoremap <C-L> <C-W><C-L>
+nnoremap <C-H> <C-W><C-H>
