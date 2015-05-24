@@ -6,3 +6,5 @@ alias "time"="time -p"
 . "$HOME/.config/fish/local_config.fish"
 
 homeshick --quiet refresh
+
+set fish_greeting ""
