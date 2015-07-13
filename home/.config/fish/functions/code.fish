@@ -1,3 +1,3 @@
 function code
-   cd ~/source/syncedsource
+   cd ~/workspace
 end
