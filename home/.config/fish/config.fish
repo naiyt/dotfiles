@@ -1,6 +1,7 @@
-alias "tpOff"="~/source/git/disable-touchpad/disableTouchpad -d"
-alias "tpOn"="~/source/git/disable-touchpad/disableTouchpad -e"
 alias "time"="time -p"
+alias "be"="bundle exec $argv"
+alias "ber"="bundle exec rake $argv"
+alias "berr"="bundle exec rake rspec $argv"
 
 . "$HOME/.homesick/repos/homeshick/homeshick.fish"
 . "$HOME/.config/fish/local_config.fish"
