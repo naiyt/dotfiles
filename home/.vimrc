@@ -2,22 +2,26 @@ set shell=/bin/sh
 set nocompatible
 filetype off
 
-" set rtp+=/etc/vim/bundle/vundle
-" call vundle#rc('/etc/vim/bundle')
-"
-" Bundle 'gmarik/vundle'
-" Bundle 'saltstack/salt-vim'
-" Bundle 'kien/ctrlp.vim'
-" Bundle 'terryma/vim-multiple-cursors'
+set rtp+=~/.vim/bundle/Vundle.vim
+
+call vundle#begin()
+  Plugin 'gmarik/Vundle.vim'
+  Plugin 'scrooloose/nerdtree.git'
+  Plugin 'kien/ctrlp.vim'
+  Plugin 'easymotion/vim-easymotion'
+  Plugin 'tpope/vim-rails'
+  Plugin 'scrooloose/syntastic'
+call vundle#end()
 
 filetype plugin indent on
 
 syntax enable
-set tabstop=4
-set shiftwidth=4
+set tabstop=2
+set shiftwidth=2
 set smartindent
 set expandtab
 set cindent
+set nu
 ino jj <esc>
 cno jj <c-c>
 vno v <esc>
@@ -31,3 +35,31 @@ nnoremap <C-J> <C-W><C-J>
 nnoremap <C-K> <C-W><C-K>
 nnoremap <C-L> <C-W><C-L>
 nnoremap <C-H> <C-W><C-H>
+
+map <Left> :echo "Use h" <cr>
+map <Right> :echo "Use l"<cr>
+map <Up> :echo "Use k"<cr>
+map <Down> :echo "Use j"<cr>
+
+map <C-n> :NERDTreeToggle<CR>
+
+" CTRL-P settings
+
+set wildignore+=*/tmp/*,*.so,*.swp,*.zip
+set wildignore+=*\\tmp\\*,*.swp,*.zip,*.exe
+
+let g:ctrlp_custom_ignore = '\v[\/]\.(git|hg|svn)$'
+let g:ctrlp_working_path_mode = 'ra'
+
+" syntastic settings
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 0
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 1
+
+map <F5> :lopen<CR>
+map <F6> :lclose<CR>
