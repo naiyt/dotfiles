@@ -11,6 +11,7 @@ call vundle#begin()
   Plugin 'easymotion/vim-easymotion'
   Plugin 'tpope/vim-rails'
   Plugin 'scrooloose/syntastic'
+  Plugin 'kchmck/vim-coffee-script'
 call vundle#end()
 
 filetype plugin indent on
