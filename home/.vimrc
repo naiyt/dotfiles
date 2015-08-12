@@ -12,6 +12,7 @@ call vundle#begin()
   Plugin 'tpope/vim-rails'
   Plugin 'scrooloose/syntastic'
   Plugin 'kchmck/vim-coffee-script'
+  Plugin 'airblade/vim-gitgutter'
 call vundle#end()
 
 filetype plugin indent on
@@ -37,11 +38,6 @@ nnoremap <C-K> <C-W><C-K>
 nnoremap <C-L> <C-W><C-L>
 nnoremap <C-H> <C-W><C-H>
 
-map <Left> :echo "Use h" <cr>
-map <Right> :echo "Use l"<cr>
-map <Up> :echo "Use k"<cr>
-map <Down> :echo "Use j"<cr>
-
 map <C-n> :NERDTreeToggle<CR>
 
 " CTRL-P settings
@@ -51,6 +47,14 @@ set wildignore+=*\\tmp\\*,*.swp,*.zip,*.exe
 
 let g:ctrlp_custom_ignore = '\v[\/]\.(git|hg|svn)$'
 let g:ctrlp_working_path_mode = 'ra'
+
+let g:ctrlp_user_command = 'ag %s -i --nocolor --nogroup --hidden
+      \ --ignore .git
+      \ --ignore .svn
+      \ --ignore .hg
+      \ --ignore .DS_Store
+      \ --ignore "**/*.pyc"
+      \ -g ""'
 
 " syntastic settings
 set statusline+=%#warningmsg#

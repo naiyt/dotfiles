@@ -19,3 +19,5 @@ screen -t
 
 termcapinfo xterm* ti@:te@
 
+shell -bash
+defscrollback 99999
