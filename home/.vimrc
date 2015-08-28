@@ -66,5 +66,11 @@ let g:syntastic_auto_loc_list = 0
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 1
 
+" F5 to open syntax error drawer, F6 to close
 map <F5> :lopen<CR>
 map <F6> :lclose<CR>
+
+" Highlight all occurences of a word
+set hlsearch 
+" Space to remove highlights
+nnoremap <silent> <Space> :nohlsearch<Bar>:echo<CR>
