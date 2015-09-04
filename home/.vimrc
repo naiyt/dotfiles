@@ -13,6 +13,9 @@ call vundle#begin()
   Plugin 'scrooloose/syntastic'
   Plugin 'kchmck/vim-coffee-script'
   Plugin 'airblade/vim-gitgutter'
+  Plugin 'skalnik/vim-vroom'
+  Plugin 'dag/vim-fish'
+  Plugin 'ntpeters/vim-better-whitespace'
 call vundle#end()
 
 filetype plugin indent on
@@ -74,3 +77,8 @@ map <F6> :lclose<CR>
 set hlsearch 
 " Space to remove highlights
 nnoremap <silent> <Space> :nohlsearch<Bar>:echo<CR>
+
+" vim-vroom settings
+nnoremap <leader>t :call vroom#RunTestFile()<CR>
+nnoremap <leader>T :call vroom#RunNearestTest()<CR>
+
