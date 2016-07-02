@@ -1,8 +1,10 @@
 alias "time"="time -p"
 alias "be"="bundle exec $argv"
 alias "ber"="bundle exec rake $argv"
-alias "r3"="rvm use ruby-1.9.3-p484"
-alias "r4"="rvm use 2.2.2"
+alias gd="cd ~/Google\ Dreive"
+alias mugen="cd ~/workspace/mugenmonkey-rails"
+
+set -x PRY_THEME dark
 
 . "$HOME/.homesick/repos/homeshick/homeshick.fish"
 . "$HOME/.config/fish/local_config.fish"
@@ -10,3 +12,8 @@ alias "r4"="rvm use 2.2.2"
 homeshick --quiet refresh
 
 set fish_greeting ""
+
+fish_vi_key_bindings
+set -g __fish_vi_mode 1
+
+alias vim="mvim -v"
