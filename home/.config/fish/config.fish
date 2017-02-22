@@ -25,4 +25,4 @@ setenv EDITOR "subl -n -w"
 
 status --is-interactive; and . (rbenv init -|psub)
 
-homeshick --quiet refresh
+homeshick --quiet refresh 2
