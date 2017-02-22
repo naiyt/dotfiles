@@ -24,3 +24,5 @@ setenv EDITOR "subl -n -w"
 # the following to ~/.config/fish/config.fish:
 
 status --is-interactive; and . (rbenv init -|psub)
+
+homeshick --quiet refresh
