@@ -1,8 +1,6 @@
 alias "time"="time -p"
 alias "be"="bundle exec $argv"
 alias "ber"="bundle exec rake $argv"
-alias gd="cd ~/Google\ Dreive"
-alias mugen="cd ~/workspace/mugenmonkey-rails"
 
 set -x PRY_THEME dark
 
@@ -17,3 +15,12 @@ fish_vi_key_bindings
 set -g __fish_vi_mode 1
 
 alias vim="mvim -v"
+
+setenv EDITOR "subl -n -w"
+
+# eval (python -m virtualfish)
+
+# Load rbenv automatically by appending
+# the following to ~/.config/fish/config.fish:
+
+status --is-interactive; and . (rbenv init -|psub)
