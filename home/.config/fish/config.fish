@@ -26,3 +26,6 @@ setenv EDITOR "subl -n -w"
 status --is-interactive; and . (rbenv init -|psub)
 
 homeshick --quiet refresh 2
+
+# Using the bobthefish theme: https://github.com/oh-my-fish/oh-my-fish/blob/master/docs/Themes.md
+set -g theme_color_scheme light
